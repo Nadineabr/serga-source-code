@@ -1,0 +1,51 @@
+// Подключение шрифтов и переменных
+@import 'fonts';
+@import 'vars';
+@import 'sprite';
+// Подключение компонентов
+@import 'components/header';
+@import 'components/about';
+@import 'components/services';
+@import 'components/results';
+@import 'components/footer';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arsenal', sans-serif;
+}
+body {
+  overflow-x: hidden
+}
+button, input {
+  border: none;
+  outline: none
+}
+ul, li, a {
+  text-decoration: none;
+  list-style-type: none;
+}
+.section {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  &_title {
+    font-size: 36px;
+    color: #ec1c23;
+    font-weight: bold;
+    padding-bottom: 40px;
+  }
+}
+@media  (max-width: 767px) {
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+  .section {
+    flex-direction: column;
+    width: 100%;
+    &_title {
+      padding-bottom: 0px
+    }
+  }
+}

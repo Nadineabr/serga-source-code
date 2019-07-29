@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  width: 80%;
+  margin: 0 auto;
+  &_desc {
+    width: 490px;
+  }
+  &_list {
+    margin-top: 30px
+  }
+}
+.text {
+  &_green {
+    color: #77af51;
+    font-size: 20px;
+    font-weight: bold
+  }
+}
+.list_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.list_title {
+  margin-left: 10px
+}
+@media  (max-width: 767px) {
+  .about {
+    flex-direction: column;
+    &_desc {
+        width: 100%;
+        font-size: 18px
+    }
+    &_img img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

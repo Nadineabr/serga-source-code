@@ -1,0 +1,48 @@
+.services {
+  padding: 40px 0;
+  background: #d1ebc0;
+  &_title {
+    text-align: center;
+  }
+  &_blocks {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &_block {
+    text-align: center;
+    width: 35%;
+    & span {
+      font-weight: bold
+    }
+  }
+  &_desc {
+    width: 80%;
+    margin: 0 auto;
+    color: #666;
+    padding-top: 20px
+  }
+}
+@media  (max-width: 767px) {
+  .services {
+    padding: 20px 0;
+    &_title {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+    }
+    &_blocks {
+      flex-direction: column
+    }
+    &_block {
+      width: 100%;
+      font-size: 18px;
+    }
+    &_pic img {
+      display: block;
+      width: 100%;
+      padding-top: 20px;
+    }
+  }
+}

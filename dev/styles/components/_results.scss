@@ -1,0 +1,26 @@
+.results {
+  padding: 40px 0;
+  background: #fafafa;
+  &_pic {
+    width: 40%;
+  }
+  &_desc {
+    width: 60%
+  }
+  &_list {
+    width: 90%
+  }
+}
+@media  (max-width: 767px) {
+  .results {
+    font-size: 18px;
+    &_pic, &_desc {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .list_item {
+    align-items: end;
+    margin: 20px 0 0 0;
+  }
+}
