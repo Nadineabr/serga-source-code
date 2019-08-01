@@ -176,6 +176,7 @@
     }
     .header_main {
         height: 100%;
+        padding-bottom: 40px; 
         background-position: 30% 0;
     }
     .header_content {
@@ -370,8 +371,9 @@
     font-family: 'Arsenal', sans-serif;
 }
 
-body {
-    overflow-x: hidden;
+html {
+    overflow-x: hidden; 
+    width: 100vw;
 }
 
 button,
@@ -400,10 +402,6 @@ a {
 }
 
 @media (max-width: 992px) {
-    html {
-        overflow-x: hidden; 
-        width: 100vw;
-    }
     .section {
         flex-direction: column;
         width: 100%;

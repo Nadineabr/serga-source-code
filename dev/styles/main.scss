@@ -14,9 +14,11 @@
   box-sizing: border-box;
   font-family: 'Arsenal', sans-serif;
 }
-body {
-  overflow-x: hidden
+html {
+  width: 100vw;
+  overflow-x: hidden;
 }
+
 button, input {
   border: none;
   outline: none
@@ -37,10 +39,6 @@ ul, li, a {
   }
 }
 @media  (max-width: 992px) {
-  html {
-    width: 100vw;
-    overflow-x: hidden;
-}
   .section {
     flex-direction: column;
     width: 100%;
