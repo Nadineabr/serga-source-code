@@ -1,7 +1,8 @@
 .reviews {
     padding: 40px 0;
   &_title {
-    text-align: center
+    text-align: center;
+    padding-bottom: 40px;
   }
   &_blocks {
     display: flex;
@@ -21,5 +22,15 @@
     margin: 0 auto;
     padding-top: 20px;
     color: #666
+  }
+}
+@media (max-width: 600px) {
+  .reviews {
+    &_blocks {
+      flex-direction: column
+    }
+    &_block {
+      width: 100%
+    }
   }
 }

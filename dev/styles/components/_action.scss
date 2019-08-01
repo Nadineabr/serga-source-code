@@ -5,7 +5,8 @@
     display: flex
   }
   &_sale {
-    display: flex
+    display: flex;
+    margin-top: 90px;
   }
   &_text {
     width: 65%;
@@ -16,6 +17,19 @@
   &_title {
     font-size: 24px;
     font-weight: bold;
+  }
+  &_price {
+    position: relative;
+  }
+  &_serga {
+    position: absolute;
+    left: -160px;
+    top: -50px;
+  }
+  &_special {
+    position: absolute;
+    top: -60px;
+    left: -50px;
   }
 }
 .action_main > .action_left {

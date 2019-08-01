@@ -50,6 +50,7 @@
 }
 .counter--action {
     width: 60%;
+    padding-bottom: 20px; 
     padding-left: 20px;
 }
 .counter_block {
@@ -62,10 +63,8 @@
     justify-content: space-around;
 }
 .counter_block--action {
-    width: 60%;
+    width: 60%; 
     padding: 0;
-
-    justify-content: space-between;
 }
 .counter_title {
     padding: 20px 0 10px;
@@ -305,8 +304,9 @@
     }
     .services_title {
         display: block;
-        width: 80%; 
+        width: 80%;
         margin: 0 auto;
+        padding-bottom: 0;
     }
     .services_blocks {
         flex-direction: column;
@@ -362,6 +362,7 @@
     padding: 40px 0;
 }
 .reviews_title {
+    padding-bottom: 40px; 
     text-align: center;
 }
 .reviews_blocks {
@@ -385,6 +386,15 @@
     color: #666;
 }
 
+@media (max-width: 600px) {
+    .reviews_blocks {
+        flex-direction: column;
+    }
+    .reviews_block {
+        width: 100%;
+    }
+}
+
 .action {
     padding: 40px 0;
     background: #fafafa;
@@ -394,6 +404,7 @@
 }
 .action_sale {
     display: flex;
+    margin-top: 90px;
 }
 .action_text {
     width: 65%;
@@ -404,6 +415,19 @@
 .action_title {
     font-size: 24px;
     font-weight: bold;
+}
+.action_price {
+    position: relative;
+}
+.action_serga {
+    position: absolute;
+    top: -50px; 
+    left: -160px;
+}
+.action_special {
+    position: absolute;
+    top: -60px;
+    left: -50px;
 }
 
 .action_main > .action_left {
@@ -456,8 +480,5 @@ a {
     .section {
         flex-direction: column;
         width: 100%;
-    }
-    .section_title {
-        padding-bottom: 0;
     }
 }
