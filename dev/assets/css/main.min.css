@@ -120,7 +120,9 @@
 }
 
 .order_form {
-    width: 288px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     margin: 0 auto;
     font-size: 14px;
     color: #444;
@@ -149,15 +151,16 @@
     box-shadow: inset 0 4px 0 0 #f2f2f2;
 }
 
-.form-group label {
-    font-size: 16px;
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
 
 .form_block {
-    display: grid;
+    display: flex;
+    width: 100%; 
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 19px;
+    justify-content: space-between;
 }
 
 #name,
@@ -289,6 +292,10 @@
     margin: 0 auto;
     padding-top: 20px; 
     color: #666;
+}
+.services_pic img {
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: 767px) {

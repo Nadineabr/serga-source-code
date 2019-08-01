@@ -23,6 +23,10 @@
     color: #666;
     padding-top: 20px
   }
+  &_pic img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media  (max-width: 767px) {
   .services {
