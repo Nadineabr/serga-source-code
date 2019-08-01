@@ -27,60 +27,58 @@
     </div>
     <div class="header_main">
       <div class="header_content"> 
-        <div class="header_left">
-          <div class="header_counter">
-            <div class="counter">
-              <p class="counter_title"> <b>Внимание! </b><span>До конца акции осталось:</span>
-                <div class="counter_block">
-                  <div class="counter_amount"><span class="counter_days">25</span>
-                    <p class="counter_text">дней</p>
-                  </div>
-                  <div class="counter_amount"><span class="counter_hours">18</span>
-                    <p class="counter_text">часов</p>
-                  </div>
-                  <div class="counter_amount"><span class="counter_minutes">37</span>
-                    <p class="counter_text">минут</p>
-                  </div>
-                  <div class="counter_amount"><span class="counter_sec">49</span>
-                    <p class="counter_text">секунд</p>
-                  </div>
-                </div>
-              </p>
-            </div>
-          </div>
+        <div class="header_sale">
+                    <div class="counter">
+                      <p class="counter_title"> <b>Внимание! </b><span>До конца акции осталось:</span>
+                        <div class="counter_block">
+                          <div class="counter_amount"><span class="counter_days">25</span>
+                            <p class="counter_text">дней</p>
+                          </div>
+                          <div class="counter_amount"><span class="counter_hours">18</span>
+                            <p class="counter_text">часов</p>
+                          </div>
+                          <div class="counter_amount"><span class="counter_minutes">37</span>
+                            <p class="counter_text">минут</p>
+                          </div>
+                          <div class="counter_amount"><span class="counter_sec">49</span>
+                            <p class="counter_text">секунд</p>
+                          </div>
+                        </div>
+                      </p>
+                    </div>
           <div class="header_price"> <img class="price_serga" src="../../assets/img/header-serga.png"/><img class="price_sale" src="../../assets/img/header-sale.png"/></div>
         </div>
-        <div class="header_order">
-          <div class="order_title"> 
-            <p> <span class="order_black">Запишитесь на </span><span class="order_red">БЕСПЛАТНЫЙ анализ состава массы тела </span><span class="order_black">и установите лечебную </span><span class="order_red">серьгу для похудения за 560 р.</span></p>
-          </div>
-          <div class="order_form">
-            <form method="POST" action="/register"></form>
-            <div class="form-group order_name">
-              <label for="name">Ваше имя</label>
-              <input class="form-control" id="name" type="text" placeholder="Алла" name="name"/>
-            </div>
-            <div class="form-group order_phone">
-              <label for="phone">Ваш телефон</label>
-              <input class="form-control" id="phone" type="text" placeholder="8 800 123 45 67" name="phone"/>
-            </div>
-            <div class="form_block">
-              <div class="form-group order_height">
-                <label for="height">Ваш рост</label>
-                <input class="form-control" id="height" type="number" placeholder="165" name="height"/>
-              </div>
-              <div class="form-group order_weight">
-                <label for="weight">Ваш вес</label>
-                <input class="form-control" id="weight" type="number" placeholder="65" name="weight"/>
-              </div>
-              <div class="form-group order_age">
-                <label for="age">Ваш возраст</label>
-                <input class="form-control" id="age" type="number" placeholder="28" name="age"/>
-              </div>
-            </div>
-            <button class="order_send" type="submit">Записаться</button>
-          </div>
-        </div>
+                <div class="order">
+                  <div class="order_title"> 
+                    <p> <span class="order_black">Запишитесь на </span><span class="order_red">БЕСПЛАТНЫЙ анализ состава массы тела </span><span class="order_black">и установите лечебную </span><span class="order_red">серьгу для похудения за 560 р.</span></p>
+                  </div>
+                  <div class="order_form">
+                    <form method="POST" action="/register"></form>
+                    <div class="form-group order_name">
+                      <label for="name">Ваше имя</label>
+                      <input class="form-control" id="name" type="text" placeholder="Алла" name="name"/>
+                    </div>
+                    <div class="form-group order_phone">
+                      <label for="phone">Ваш телефон</label>
+                      <input class="form-control" id="phone" type="text" placeholder="8 800 123 45 67" name="phone"/>
+                    </div>
+                    <div class="form_block">
+                      <div class="form-group order_height">
+                        <label for="height">Ваш рост</label>
+                        <input class="form-control" id="height" type="number" placeholder="165" name="height"/>
+                      </div>
+                      <div class="form-group order_weight">
+                        <label for="weight">Ваш вес</label>
+                        <input class="form-control" id="weight" type="number" placeholder="65" name="weight"/>
+                      </div>
+                      <div class="form-group order_age">
+                        <label for="age">Ваш возраст</label>
+                        <input class="form-control" id="age" type="number" placeholder="28" name="age"/>
+                      </div>
+                    </div>
+                    <button class="order_send" type="submit">Записаться</button>
+                  </div>
+                </div>
       </div>
     </div>
   </header>
@@ -151,6 +149,92 @@
             <p class="list_title">Срок ношения серьги подбирается специалистом индивидуально, в зависимости от веса пациента, количества жировой и костной ткани.</p>
           </li>
         </ul>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="section_title reviews_title">
+      <p>Отзывы наших клиентов</p>
+    </div>
+    <div class="reviews_blocks">
+      <div class="reviews_block">  
+        <p class="text_green">Нина, 48 лет</p>
+        <p class="reviews_text">Мне понравился серьезный профессиональный подход. Не давали глупых гарантий. Вес снизила с 97 до 79 кг. И без вреда для здоровья!</p>
+      </div>
+      <div class="reviews_block">  
+        <p class="text_green">Зинаида, 36 лет</p>
+        <p class="reviews_text">Мне понравился серьезный профессиональный подход. Не давали глупых гарантий. Вес снизила с 97 до 79 кг. И без вреда для здоровья!</p>
+      </div>
+      <div class="reviews_block">  
+        <p class="text_green">Вероника, 29 лет</p>
+        <p class="reviews_text">Мне понравился серьезный профессиональный подход. Не давали глупых гарантий. Вес снизила с 97 до 79 кг. И без вреда для здоровья!</p>
+      </div>
+    </div>
+  </section>
+  <section class="action">
+    <div class="section">
+      <div class="action_main">
+        <div class="action_left">
+          <div class="action_text">
+            <p class="action_title">Оставьте заявку на участие в БЕСПЛАТНОМ анализе состава массы тела, пока акционные места не закончились!</p>
+            <p class="text_green">Результат превзойдёт все ваши ожидания!</p>
+            <p>Воспользуйтесь реальным шансом сменить размер XXL на L!</p>
+          </div>
+          <div class="action_sale"> 
+            <div class="counter counter--action">
+              <p class="counter_title counter_title--action"> <b>Внимание! </b><span>До конца акции осталось:</span>
+                <div class="counter_block counter_block--action">
+                  <div class="counter_amount"><span class="counter_days">25</span>
+                    <p class="counter_text">дней</p>
+                  </div>
+                  <div class="counter_amount"><span class="counter_hours">18</span>
+                    <p class="counter_text">часов</p>
+                  </div>
+                  <div class="counter_amount"><span class="counter_minutes">37</span>
+                    <p class="counter_text">минут</p>
+                  </div>
+                  <div class="counter_amount"><span class="counter_sec">49</span>
+                    <p class="counter_text">секунд</p>
+                  </div>
+                </div>
+              </p>
+            </div>
+            <div class="action_price"> <img class="action_serga" src="../../assets/img/header-serga.png"/><img class="action_sale" src="../../assets/img/header-sale.png"/></div>
+          </div>
+        </div>
+        <div class="action_right">       
+                  <div class="order">
+                    <div class="order_title"> 
+                      <p> <span class="order_black">Запишитесь на </span><span class="order_red">БЕСПЛАТНЫЙ анализ состава массы тела </span><span class="order_black">и установите лечебную </span><span class="order_red">серьгу для похудения за 560 р.</span></p>
+                    </div>
+                    <div class="order_form">
+                      <form method="POST" action="/register"></form>
+                      <div class="form-group order_name">
+                        <label for="name">Ваше имя</label>
+                        <input class="form-control" id="name" type="text" placeholder="Алла" name="name"/>
+                      </div>
+                      <div class="form-group order_phone">
+                        <label for="phone">Ваш телефон</label>
+                        <input class="form-control" id="phone" type="text" placeholder="8 800 123 45 67" name="phone"/>
+                      </div>
+                      <div class="form_block">
+                        <div class="form-group order_height">
+                          <label for="height">Ваш рост</label>
+                          <input class="form-control" id="height" type="number" placeholder="165" name="height"/>
+                        </div>
+                        <div class="form-group order_weight">
+                          <label for="weight">Ваш вес</label>
+                          <input class="form-control" id="weight" type="number" placeholder="65" name="weight"/>
+                        </div>
+                        <div class="form-group order_age">
+                          <label for="age">Ваш возраст</label>
+                          <input class="form-control" id="age" type="number" placeholder="28" name="age"/>
+                        </div>
+                      </div>
+                      <button class="order_send" type="submit">Записаться</button>
+                    </div>
+                  </div>
+        </div>
       </div>
     </div>
   </section>

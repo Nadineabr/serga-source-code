@@ -1,0 +1,26 @@
+.action {
+  padding: 40px 0;
+  background: #fafafa;
+  &_main {
+    display: flex
+  }
+  &_sale {
+    display: flex
+  }
+  &_text {
+    width: 65%;
+    margin: 0 auto;
+    color: #77af51;
+    text-align: center;
+  }
+  &_title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+.action_main > .action_left {
+  flex: auto
+}
+.action_main > .action_right {
+  width: 40%
+}

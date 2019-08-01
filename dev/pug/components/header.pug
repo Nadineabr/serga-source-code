@@ -13,8 +13,8 @@ header.header
       b  560 ₽
   div.header_main
     div.header_content 
-      div.header_left
-        div.header_counter
+      div.header_sale
+        mixin counter
           div.counter
             p.counter_title 
               b Внимание! 
@@ -32,33 +32,35 @@ header.header
                 div(class='counter_amount')
                   span(class='counter_sec') 49
                   p.counter_text секунд
+        +counter
         div.header_price 
           img(class='price_serga' src='../../assets/img/header-serga.png')     
-          img(class='price_sale' src='../../assets/img/header-sale.png')          
-      div.header_order
-        div.order_title 
-          p 
-            span.order_black Запишитесь на 
-            span.order_red БЕСПЛАТНЫЙ анализ состава массы тела 
-            span.order_black и установите лечебную 
-            span.order_red серьгу для похудения за 560 р.
-        div.order_form
-          form(method='POST' action='/register')
-          div.form-group.order_name
-            label(for='name') Ваше имя
-            input#name.form-control(type='text', placeholder='Алла' name='name')
-          div.form-group.order_phone
-            label(for='phone') Ваш телефон
-            input#phone.form-control(type='text', placeholder='8 800 123 45 67' name='phone')
-          div.form_block
-            div.form-group.order_height
-              label(for='height') Ваш рост
-              input#height.form-control(type='number', placeholder='165' name='height')
-            div.form-group.order_weight
-              label(for='weight') Ваш вес
-              input#weight.form-control(type='number', placeholder='65' name='weight')
-            div.form-group.order_age
-              label(for='age') Ваш возраст
-              input#age.form-control(type='number', placeholder='28' name='age')
-          button.order_send(type='submit') Записаться
-        
+          img(class='price_sale' src='../../assets/img/header-sale.png')  
+      mixin order
+        div.order
+          div.order_title 
+            p 
+              span.order_black Запишитесь на 
+              span.order_red БЕСПЛАТНЫЙ анализ состава массы тела 
+              span.order_black и установите лечебную 
+              span.order_red серьгу для похудения за 560 р.
+          div.order_form
+            form(method='POST' action='/register')
+            div.form-group.order_name
+              label(for='name') Ваше имя
+              input#name.form-control(type='text', placeholder='Алла' name='name')
+            div.form-group.order_phone
+              label(for='phone') Ваш телефон
+              input#phone.form-control(type='text', placeholder='8 800 123 45 67' name='phone')
+            div.form_block
+              div.form-group.order_height
+                label(for='height') Ваш рост
+                input#height.form-control(type='number', placeholder='165' name='height')
+              div.form-group.order_weight
+                label(for='weight') Ваш вес
+                input#weight.form-control(type='number', placeholder='65' name='weight')
+              div.form-group.order_age
+                label(for='age') Ваш возраст
+                input#age.form-control(type='number', placeholder='28' name='age')
+            button.order_send(type='submit') Записаться
+      +order
