@@ -24,13 +24,13 @@
   }
   &_serga {
     position: absolute;
-    left: -160px;
     top: -50px;
+    left: -50px;
   }
   &_special {
     position: absolute;
     top: -60px;
-    left: -50px;
+    left: 20px;
   }
 }
 .action_main > .action_left {
@@ -76,6 +76,7 @@
     &_main {
       align-items: center;
       flex-direction: column;
+      width: 100%;
     }
     &_serga {
       width: 60%;

@@ -213,8 +213,9 @@
     }
     .counter_title {
         font-size: 18px;
+        text-align: center;
     }
-    .counter_title--action {
+    .counter--action {
         text-align: center;
     }
     .counter_block {
@@ -433,13 +434,13 @@
 }
 .action_serga {
     position: absolute;
-    top: -50px; 
-    left: -160px;
+    top: -50px;
+    left: -50px;
 }
 .action_special {
     position: absolute;
     top: -60px;
-    left: -50px;
+    left: 20px;
 }
 
 .action_main > .action_left {
@@ -486,7 +487,8 @@
         position: initial;
     }
     .action_main {
-        flex-direction: column; 
+        flex-direction: column;
+        width: 100%; 
 
         align-items: center;
     }
