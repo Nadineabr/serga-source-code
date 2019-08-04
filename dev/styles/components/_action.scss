@@ -2,7 +2,8 @@
   padding: 40px 0;
   background: #fafafa;
   &_main {
-    display: flex
+    display: flex;
+    margin: 0 auto;
   }
   &_sale {
     display: flex;
@@ -33,8 +34,59 @@
   }
 }
 .action_main > .action_left {
-  flex: auto
+    display: flex;
+    flex-direction: column;
 }
-.action_main > .action_right {
-  width: 40%
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .action {
+    &_sale {
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center
+    }
+    &_price {
+      position: initial;
+      margin-top: 20px; 
+    }
+    &_serga, &_special {
+      position: initial;
+    }
+    &_special {
+      margin-top: -40%;
+      margin-left: 20%;
+    }
+    &_main {
+      align-items: flex-end
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .action {
+    &_sale {
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center
+    }
+    &_price {
+      position: initial
+    }
+    &_serga, &_special {
+      position: initial;
+    }
+    &_main {
+      align-items: center;
+      flex-direction: column;
+    }
+    &_serga {
+      width: 60%;
+      margin-top: 20px;
+    }
+    &_special {
+      width: 100%;
+      margin-top: -40%;
+    }
+  }
+  .action_main > .action_right {
+    width: 100%
+  }
 }

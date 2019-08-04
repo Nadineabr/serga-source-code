@@ -2,7 +2,6 @@
     padding: 40px 0;
   &_title {
     text-align: center;
-    padding-bottom: 40px;
   }
   &_blocks {
     display: flex;
@@ -30,7 +29,8 @@
       flex-direction: column
     }
     &_block {
-      width: 100%
+      width: 100%;
+      margin-bottom: 30px;
     }
   }
 }
