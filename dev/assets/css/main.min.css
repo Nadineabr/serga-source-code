@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 .header_top {
     padding: 30px 0 20px; 
     font-size: 36px;
@@ -503,6 +504,64 @@
     .action_main > .action_right {
         width: 100%;
     }
+}
+
+.address {
+    padding: 40px 0; 
+    background: #74aa4f;
+}
+.address_text {
+    width: 90%;
+    margin: 0 auto; 
+    color: #fff;
+    text-align: center;
+}
+.address_title {
+    padding-bottom: 25px; 
+    font-size: 36px;
+    font-weight: bold;
+}
+.address_item {
+    font-size: 18px;
+}
+
+.medicine {
+    padding: 40px 0; 
+    background: #fdc858;
+}
+.medicine_text {
+    width: 90%;
+    margin: 0 auto; 
+    color: #fff;
+    text-align: center;
+}
+.medicine_title {
+    padding-bottom: 25px; 
+    font-size: 36px;
+    font-weight: bold;
+}
+.medicine_item {
+    position: relative; 
+    font-size: 18px;
+}
+.medicine_item:before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    color: red; 
+    content: 'х';
+}
+
+.footer {
+    padding: 25px 0;
+    background-color: #fff;
+}
+.footer_text,
+.footer a {
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
 }
 
 * {
